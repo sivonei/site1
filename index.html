@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--Import Google Icon Font-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Pizzeriabaroni</title>
+     <title>PizzeriaItaberaba</title>
     <link rel="icon" href="img/teste.png">
       <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -18,22 +19,22 @@
     <header>
     <!--MENU MOBILE-->
         <ul class="sidenav" id="menu-mobile">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre a Baronni </a></li>
-            <li><a href="#cardapio">Cardápio</a></li>
-            <li><a href="#contatos">Contatoss</a></li>
+            <li><a class="sidenav-close orange" href="#home">Home</a></li>
+            <li><a class="sidenav-close orange" href="#sobre">Sobre a Pizzaria </a></li>
+            <li><a class="sidenav-close orange" href="#cardapio">Cardápio</a></li>
+            <li><a class="sidenav-close orange" href="#contatos">Contatos</a></li>
         </ul>
 
     <!--NAVBAR-->
         <div class="navbar-fixed">
             <nav class="navbar">
                 <div class="nav-wrapper container">
-                    <h1 class="logo_text">Baroni Pizzeria </h1>
+                    <h1 class="logo_text">Itaberaba Pizzaria </h1>
                         <a href=""><img class="logo_img" src="img/baroni.png" alt="Baroni Pizzeria" ></a>
                          <ul class="right light hide-on-med-and-down">
                             <li><a href="#home">Home</a></li>
-                            <li><a href="#sobre">Sobre a Baronni </a></li>
                             <li><a href="#cardapio">Cardápio</a></li>
+                            <li><a href="#sobre">Sobre a Pizzaria </a></li>
                             <li><a href="#contatos">Contatos</a></li>
 
                         </ul>
@@ -45,50 +46,166 @@
         </div>
     </header>
     <!-- HOME-->
-    <section class="home bloco scrollspy" id="home">
+    <section  class=" home bloco scrollspy " id="home" >
         <div class="row container banner">
-            <div class="col s12 center">
-                <h2 class="white-text">A Melhor Pizza da bahia </h2>
-                <p class="white-text light" style="text-align: justify;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+            <div class="col s12 center ">
+                <h2>A Melhor Pizza da bahia </h2>
+                <p style="text-align: justify;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
                 <div class="row botoes">
-                     <a class="btn btn-large orange"> Sobre nós </a>
-                     <a class="btn btn-large white black-text"> Contato </a>
+                     <a href="#contatos" class="waves-effect waves-light btn-large white-text"> Faça seu pedido AQUI </a>
+                     
                 
                  </div>
             </div>
         </div>
     </section>
+        <!--CARDAPIO-->
+        <section class="cardapio bloco scrollspy" id="cardapio">
+            <div class="row container cards">
+                <div class="col s12 m4">
+                  <div class="card medium">
+                    <div class="card-image">
+                      <img class="responsive-img" src="img/card3pizza.jpg">
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">This is a link</a>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="col s12 m4">
+                    <div class="card medium">
+                      <div class="card-image">
+                        <img class="responsive-img" src="img/car1pizza.jpg">
+                        </div>
+                      <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m4">
+                    <div class="card medium">
+                      <div class="card-image">
+                        <img class="responsive-img" src="img/card2pizza.jpg">
+                        </div>
+                      <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+              
+        </section>
     <!--SOBRE-->
-
     <section class="sobre bloco scrollspy" id="sobre">
         <div class="row container">
             <div class="col s12 center">
-                <h2 class="light" >Sobre a Baronni</h2>
+                <h2 class="light" >Sobre a Pizzaria</h2>
             </div>
-            <div class="col s12">
-                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+            <div class="col s12 l6">
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+            </div>
+            <div class="col s12 l6">
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
             </div>
     
         </div>
 
     </section>
-
-    <!--CARDAPIO-->
-    <section class="cardapio bloco scrollspy" id="cardapio">
-
-    </section>
-
     <!--CONTATO-->
     <section class="contatos bloco scrollspy" id="contatos">
+        <div class="row container">
+            <div class="row rede">
+              <div class="col s12 m6 center">
+                <h2 class="titulo light white-text">Contato</h2>
+                <p>(75) 9 9123-8900<a href="#" class="btn-floating blu-logo"><i class="fa fa-whatsapp"></i></a></p>
+                <p>(75) 9 9846-3492<a href="#" class="btn-floating blu-logo"><i class="fa fa-whatsapp"></i></a></p>
+
+              </div>
+              <div class="col s12 m6">
+                  <div class="informacoes white-text center">
+                    <h2>Redes Sociais</h2>
+                    <a href="#" class="btn-floating blu-logo"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="btn-floating blu-logo"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="btn-floating blu-logo"><i class="fa fa-whatsapp"></i></a>
+                  </div>
+                  
+              </div>
+            </div>
+
+            <div class="col s12  l6">
+                <div class="mapa">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12851.613841912207!2d-38.51118420977159!3d-12.983189691488956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160494c16a99a9%3A0xc16117f191fe35ec!2sR.%20Futuro%20do%20Toror%C3%B3%2C%2016%20-%20Tororo%2C%20Salvador%20-%20BA%2C%2040050-090!5e0!3m2!1spt-BR!2sbr!4v1597025507942!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="col s12 l6 right formulario">
+              <div class="  black-text">
+                  <h3 class="center">Fale conosco</h3>
+                  <p class="center">Dúvidas, criticas ou sujestões. Seu contato é muito importante</p>
+              </div>
+              <form action="" method="post">
+                <div class="input-field">
+                  <input type="text" name="name" id="name">
+                  <label for="name">Seu nome</label>
+                  <div class="input-field">
+                    <input type="text" name="email" id="email">
+                    <label for="email">Seu email</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" name="assunto" id="assunto">
+                    <label for="assunto">Assunto</label>
+                  </div>
+                  <div class="input-field center">
+                    <textarea id="menssage" class="materialize-textarea"></textarea>
+                    <label for="assunto">Menssagem</label>
+                    <button class="btn blue-logo" type="submit" name="action">Enviar
+                    </button>
+                  </div>
+                </div>
+              </form>
+                  
+
+                
+
+
+            </div>
+            </div>
+        </div>
 
     </section>
+    <footer class="page-footer">
+      <div class="container">
+
+              <div class="footer-copyright">
+                <div class="container center ">
+                  © 2020 Copyright
+                </div>
+                <div class="container center ">
+                  Desevolvidor por: Sivonei Ribeiro
+                </div>
+              </div>
+    </footer>
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
 
         <!-- JAVA SCRIPT -->
 
@@ -101,8 +218,9 @@
                   $('.scrollspy').scrollSpy({
                       scrollOffset: 10
                   });
+                 
              });
-        </script>$
+        </script>
     
 </body>
 </html>
